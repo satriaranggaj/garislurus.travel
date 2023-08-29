@@ -1,0 +1,62 @@
+@import "../variables";
+
+#warning-scam{
+    min-height: 500px;
+    width: 100%;
+    padding: 25px;
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title{
+            margin-bottom: 15px;
+            h1{
+                font-size: calc(1.5vw + 1.5rem);
+                color: $yellow;
+                font-weight: 900;
+            }
+        }
+        .warning-content{
+            display: flex;
+            
+            .desc-pict{
+                margin: 15px;
+                display: flex;
+                flex-direction: column;
+                max-width: 475px;
+                .desc{
+                    margin-bottom: 15px;
+                    p{
+                        font-size: calc(1vw + 1rem);
+                        font-weight: bold;
+                    }
+                }
+                .pict{
+                    position: absolute;
+                    margin-top: 175px;
+                    margin-right: 450px;
+                    max-width: 550px;
+
+                    img{
+                        border: 5px solid $primary;
+                        border-radius: 5px;
+                        width: 100%;
+                    }
+                }
+            }
+            .just-pict{
+                margin: 15px;
+                .pict{
+                    max-width: 500px;
+                    img{
+                        border: 5px solid $primary;
+                        border-radius: 5px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

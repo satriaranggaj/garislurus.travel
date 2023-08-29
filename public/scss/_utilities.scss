@@ -1,0 +1,53 @@
+html,
+body {
+    background-color: #1B1B1B !important;
+}
+
+.font-heading {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+}
+
+@for $i from 1 through 60 {
+    .fs-\[#{$i}px\] {
+        font-size: $i * 1px;
+    }
+
+    @include media-breakpoint-up(sm) {
+        .fs-sm-\[#{$i}px\] {
+            font-size: $i * 1px;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .fs-md-\[#{$i}px\] {
+            font-size: $i * 1px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .fs-lg-\[#{$i}px\] {
+            font-size: $i * 1px;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        .fs-xl-\[#{$i}px\] {
+            font-size: $i * 1px;
+        }
+    }
+
+    @include media-breakpoint-up(xxl) {
+        .fs-xxl-\[#{$i}px\] {
+            font-size: $i * 1px;
+        }
+    }
+}
+
+.btn {
+    font-weight: 600;
+}
+
+.text-yellow {
+    color: $yellow-500;
+}

@@ -1,0 +1,358 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5000;
+  background-color: #000;
+}
+
+.jumbotron {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("/img/jumbotron.jpeg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.jumbotron::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.jumbotron > * {
+  position: relative;
+  z-index: 2;
+}
+
+#warning-scam {
+  min-height: 500px;
+  width: 100%;
+  padding: 25px;
+}
+
+#warning-scam .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#warning-scam .container .title {
+  margin-bottom: 15px;
+}
+
+#warning-scam .container .title h1 {
+  font-size: calc(1.5vw + 1.5rem);
+  color: #ffcc00;
+  font-weight: 900;
+}
+
+#warning-scam .container .warning-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#warning-scam .container .warning-content .desc-pict {
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 475px;
+}
+
+#warning-scam .container .warning-content .desc-pict .desc {
+  margin-bottom: 15px;
+}
+
+#warning-scam .container .warning-content .desc-pict .desc p {
+  font-size: calc(1vw + 1rem);
+  font-weight: bold;
+}
+
+#warning-scam .container .warning-content .desc-pict .pict {
+  position: absolute;
+  margin-top: 175px;
+  margin-right: 450px;
+  max-width: 550px;
+}
+
+#warning-scam .container .warning-content .desc-pict .pict img {
+  border: 5px solid #CD672E;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#warning-scam .container .warning-content .just-pict {
+  margin: 15px;
+}
+
+#warning-scam .container .warning-content .just-pict .pict {
+  max-width: 500px;
+}
+
+#warning-scam .container .warning-content .just-pict .pict img {
+  border: 5px solid #CD672E;
+  border-radius: 5px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+  #warning-scam {
+    min-height: 500px;
+    width: 100%;
+    padding: 25px;
+  }
+  #warning-scam .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #warning-scam .container .title {
+    margin-bottom: 5px;
+  }
+  #warning-scam .container .warning-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #warning-scam .container .warning-content .desc-pict {
+    margin: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: none;
+    width: 100%;
+  }
+  #warning-scam .container .warning-content .desc-pict p {
+    text-align: center;
+  }
+  #warning-scam .container .warning-content .desc-pict .pict {
+    position: static;
+    margin-top: 0;
+    margin-right: 0;
+    max-width: none;
+    padding: 5px;
+    width: 100%;
+  }
+  #warning-scam .container .warning-content .desc-pict .pict img {
+    border: 5px solid #CD672E;
+    border-radius: 5px;
+    width: 100%;
+  }
+  #warning-scam .container .warning-content .just-pict {
+    margin: 5px;
+  }
+  #warning-scam .container .warning-content .just-pict .pict {
+    max-width: none;
+    width: 100%;
+  }
+  #warning-scam .container .warning-content .just-pict .pict img {
+    border: 5px solid #CD672E;
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #cause-of-fail {
+    min-height: 500px;
+    width: 100%;
+    padding: 50px;
+  }
+  #cause-of-fail .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: none;
+    width: 100%;
+  }
+  #cause-of-fail .container .title-desc {
+    max-width: none;
+    width: 100%;
+    margin: 15px;
+  }
+  #cause-of-fail .container .title-desc .title h2 {
+    font-size: calc(1vw + .8rem);
+  }
+  #cause-of-fail .container .title-desc .list-desc ul li {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  #cause-of-fail .container .title-desc .list-desc ul li svg {
+    color: #ffcc00;
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+  }
+  #cause-of-fail .container .title-desc .list-desc ul li p {
+    font-size: calc(.5vw + .5rem);
+  }
+  #cause-of-fail .container .pict-desc {
+    margin: 15px;
+    max-width: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #cause-of-fail .container .pict-desc .pict {
+    max-width: 150px;
+  }
+  #cause-of-fail .container .pict-desc .pict img {
+    border-radius: 250px 250px 0 0;
+    width: 100%;
+  }
+  #cause-of-fail .container .pict-desc .desc {
+    max-width: 150px;
+  }
+  #cause-of-fail .container .pict-desc .desc p {
+    font-size: calc(.6vw + .5rem);
+  }
+}
+
+#cause-of-fail {
+  min-height: 500px;
+  width: 100%;
+  padding: 50px;
+}
+
+#cause-of-fail .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
+#cause-of-fail .container .title-desc {
+  max-width: 500px;
+  margin: 15px;
+}
+
+#cause-of-fail .container .title-desc .title h2 {
+  font-size: calc(1vw + .8rem);
+}
+
+#cause-of-fail .container .title-desc .list-desc ul li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+#cause-of-fail .container .title-desc .list-desc ul li svg {
+  color: #ffcc00;
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+
+#cause-of-fail .container .title-desc .list-desc ul li p {
+  font-size: calc(.5vw + .5rem);
+}
+
+#cause-of-fail .container .pict-desc {
+  margin: 15px;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#cause-of-fail .container .pict-desc .pict {
+  max-width: 250px;
+}
+
+#cause-of-fail .container .pict-desc .pict img {
+  border-radius: 250px 250px 0 0;
+  width: 100%;
+}
+
+#cause-of-fail .container .pict-desc .desc {
+  max-width: 250px;
+}
+
+#cause-of-fail .container .pict-desc .desc p {
+  font-size: calc(.6vw + .5rem);
+}
+/*# sourceMappingURL=components.css.map */
