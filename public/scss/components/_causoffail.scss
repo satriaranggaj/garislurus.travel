@@ -15,26 +15,24 @@
             margin: 15px;
             .title{
                 h2{
-                    font-size: calc(1vw + .8rem);
+                    font-size: calc(.8vw + 1rem);
                 }
             }
 
             .list-desc{
-                ul{
-                    li{
-                        list-style: none;
-                        display: flex;
-                        align-items: start;
+                .list{
+                    display: flex;
+                    margin-bottom: 5px;
+                    align-items: center;
 
-                        svg{
-                            color: $yellow;
-                            width: 25px;
-                            height: 25px;
-                            margin-right: 15px;
-                        }
-                        p{
-                            font-size: calc(.5vw + .5rem);
-                        }
+                    svg{
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        margin-right: 15px;
+                    }
+                    p{
+                        margin: auto;
+                        font-size: calc(.2vw + .8rem);
                     }
                 }
             }
@@ -58,7 +56,7 @@
             .desc{
                 max-width: 250px;
                 p{
-                    font-size: calc(.6vw + .5rem);
+                    font-size: calc(.3vw + .8rem);
                 }
             }
         }

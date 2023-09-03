@@ -57,8 +57,15 @@
 }
 
 #warning-scam .container .title h1 {
-  font-size: calc(1.5vw + 1.5rem);
-  color: #ffcc00;
+  font-size: calc(1vw + 2rem);
+  background-image: radial-gradient(circle, white, #d2a32f);
+  -webkit-background-clip: text;
+  /* Untuk browser WebKit (Safari, Chrome) */
+  background-clip: text;
+  color: transparent;
+  /* Membuat teks asli transparan */
+  background-size: 75%;
+  background-repeat: repeat;
   font-weight: 900;
 }
 
@@ -85,7 +92,7 @@
 }
 
 #warning-scam .container .warning-content .desc-pict .desc p {
-  font-size: calc(1vw + 1rem);
+  font-size: calc(.5vw + 1.5rem);
   font-weight: bold;
 }
 
@@ -97,7 +104,7 @@
 }
 
 #warning-scam .container .warning-content .desc-pict .pict img {
-  border: 5px solid #CD672E;
+  border: 5px solid #d2a32f;
   border-radius: 5px;
   width: 100%;
 }
@@ -111,7 +118,7 @@
 }
 
 #warning-scam .container .warning-content .just-pict .pict img {
-  border: 5px solid #CD672E;
+  border: 5px solid #d2a32f;
   border-radius: 5px;
   width: 100%;
 }
@@ -173,7 +180,7 @@
     width: 100%;
   }
   #warning-scam .container .warning-content .desc-pict .pict img {
-    border: 5px solid #CD672E;
+    border: 5px solid #d2a32f;
     border-radius: 5px;
     width: 100%;
   }
@@ -185,9 +192,54 @@
     width: 100%;
   }
   #warning-scam .container .warning-content .just-pict .pict img {
-    border: 5px solid #CD672E;
+    border: 5px solid #d2a32f;
     border-radius: 5px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #core-value .container .content-value {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #core-value .container .content-value .card-content {
+    margin: 20px auto;
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 5px 10px 5px black;
+            box-shadow: 5px 5px 10px 5px black;
+    background-color: whitesmoke;
+    max-width: none;
+    width: 100%;
+    min-height: 350px;
+    padding: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -220,25 +272,25 @@
     margin: 15px;
   }
   #cause-of-fail .container .title-desc .title h2 {
-    font-size: calc(1vw + .8rem);
+    font-size: calc(.8vw + 1rem);
   }
-  #cause-of-fail .container .title-desc .list-desc ul li {
-    list-style: none;
+  #cause-of-fail .container .title-desc .list-desc .list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    margin-bottom: 5px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #cause-of-fail .container .title-desc .list-desc ul li svg {
-    color: #ffcc00;
-    width: 25px;
-    height: 25px;
+  #cause-of-fail .container .title-desc .list-desc .list svg {
+    width: 1.5rem;
+    height: 1.5rem;
     margin-right: 15px;
   }
-  #cause-of-fail .container .title-desc .list-desc ul li p {
-    font-size: calc(.5vw + .5rem);
+  #cause-of-fail .container .title-desc .list-desc .list p {
+    margin: auto;
+    font-size: calc(.2vw + .8rem);
   }
   #cause-of-fail .container .pict-desc {
     margin: 15px;
@@ -268,7 +320,7 @@
     max-width: 150px;
   }
   #cause-of-fail .container .pict-desc .desc p {
-    font-size: calc(.6vw + .5rem);
+    font-size: calc(.3vw + .8rem);
   }
 }
 
@@ -297,28 +349,28 @@
 }
 
 #cause-of-fail .container .title-desc .title h2 {
-  font-size: calc(1vw + .8rem);
+  font-size: calc(.8vw + 1rem);
 }
 
-#cause-of-fail .container .title-desc .list-desc ul li {
-  list-style: none;
+#cause-of-fail .container .title-desc .list-desc .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  margin-bottom: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#cause-of-fail .container .title-desc .list-desc ul li svg {
-  color: #ffcc00;
-  width: 25px;
-  height: 25px;
+#cause-of-fail .container .title-desc .list-desc .list svg {
+  width: 1.5rem;
+  height: 1.5rem;
   margin-right: 15px;
 }
 
-#cause-of-fail .container .title-desc .list-desc ul li p {
-  font-size: calc(.5vw + .5rem);
+#cause-of-fail .container .title-desc .list-desc .list p {
+  margin: auto;
+  font-size: calc(.2vw + .8rem);
 }
 
 #cause-of-fail .container .pict-desc {
@@ -353,6 +405,104 @@
 }
 
 #cause-of-fail .container .pict-desc .desc p {
-  font-size: calc(.6vw + .5rem);
+  font-size: calc(.3vw + .8rem);
+}
+
+#core-value {
+  min-height: 500px;
+  width: 100%;
+  padding: 25px;
+}
+
+#core-value .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#core-value .container .title {
+  margin-bottom: 15px;
+}
+
+#core-value .container .title h2 {
+  font-size: calc(1vw + 2rem);
+  background-image: radial-gradient(circle, white, #d2a32f);
+  -webkit-background-clip: text;
+  /* Untuk browser WebKit (Safari, Chrome) */
+  background-clip: text;
+  color: transparent;
+  /* Membuat teks asli transparan */
+  background-size: 75%;
+  background-repeat: repeat;
+  font-weight: 900;
+}
+
+#core-value .container .content-value {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#core-value .container .content-value .card-content {
+  margin: 20px auto;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 10px 5px black;
+          box-shadow: 5px 5px 10px 5px black;
+  background-color: whitesmoke;
+  max-width: 500px;
+  width: 100%;
+  min-height: 350px;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+#core-value .container .content-value .card-content .pict {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 100%;
+  background-color: #d2a32f;
+  overflow: hidden;
+}
+
+#core-value .container .content-value .card-content .pict img {
+  width: 100%;
+  height: 100%;
+}
+
+#core-value .container .content-value .card-content .title h3 {
+  font-size: calc(.5vw + 1.5rem);
+  font-weight: bold;
+  color: #d2a32f;
+}
+
+#core-value .container .content-value .card-content .desc p {
+  text-align: justify;
+  color: black;
+  font-size: calc(.3vw + .8rem);
 }
 /*# sourceMappingURL=components.css.map */

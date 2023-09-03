@@ -13,8 +13,13 @@
         .title{
             margin-bottom: 15px;
             h1{
-                font-size: calc(1.5vw + 1.5rem);
-                color: $yellow;
+                font-size: calc(1vw + 2rem);
+                background-image: $primary-g;
+                -webkit-background-clip: text; /* Untuk browser WebKit (Safari, Chrome) */
+                background-clip: text;
+                color: transparent; /* Membuat teks asli transparan */
+                background-size: 75%;
+                background-repeat: repeat;
                 font-weight: 900;
             }
         }
@@ -29,7 +34,7 @@
                 .desc{
                     margin-bottom: 15px;
                     p{
-                        font-size: calc(1vw + 1rem);
+                        font-size: calc(.5vw + 1.5rem);
                         font-weight: bold;
                     }
                 }
